@@ -4,22 +4,35 @@
 
 # Curtis Bot
 
-**AI Agent Gateway** — Bridge your phone to Claude Code, Kimi, and other AI coding CLIs through OpenClaw.
+**What if Claude Code and OpenClaw had a baby?**
 
-Curtis Bot turns your Linux machine into a personal AI operating system. Text from your phone, and a full-powered coding agent responds — reading files, writing code, running builds, managing deployments, and monitoring services.
+Curtis Bot is the answer. Use your existing Claude Code subscription — no extra API keys, no extra fees — and get everything OpenClaw has to offer on top of it. Phone access, cron jobs, skills, file transfers, multi-agent orchestration, all powered by the Claude Code CLI you already pay for.
 
-## What It Does
+> **No extra cost.** Your Claude Code subscription already includes CLI access. Curtis Bot just plugs OpenClaw into it as the orchestration layer — giving you Telegram access, cron monitoring, 50+ skills, and multi-agent workflows for free.
+
+## Why?
+
+Claude Code is incredible — but it's stuck in your terminal. OpenClaw is incredible — but it uses its own models behind an API.
+
+**Curtis Bot connects them.** OpenClaw handles the infra (messaging, cron, skills, file transfers). Claude Code handles the coding (Opus 4.6, full IDE agent). You get the best of both worlds without paying twice.
 
 ```
-Phone (Telegram/SMS) → OpenClaw Gateway → Claude Code / Kimi CLI → Your Machine
+Your Claude Code subscription
+        +
+OpenClaw (free orchestration layer)
+        =
+Curtis Bot — AI agent you can text from your phone
 ```
 
-- **Text-to-code**: Message from your phone, get full coding sessions
-- **Multi-agent orchestration**: Spawn Claude Code and Kimi in parallel on different tasks
-- **Cron monitoring**: Automated health checks on running services (e.g. trading bots)
-- **File transfers**: Send/receive files via LocalSend between devices
-- **Skill system**: Extensible plugins for GitHub, Discord, 1Password, weather, and 50+ more
-- **Git operations**: Create repos, push code, open PRs — all from your phone
+## What You Get
+
+- **Text-to-code from your phone** — Message from Telegram, get full Claude Code sessions
+- **No extra API key** — Uses your Claude Code CLI subscription directly
+- **Multi-agent orchestration** — Spawn Claude Code and Kimi in parallel
+- **50+ skills** — GitHub, Discord, 1Password, LocalSend, weather, and more
+- **Cron monitoring** — Automated health checks on running services
+- **File transfers** — Send/receive files between phone and machine via LocalSend
+- **Git from your pocket** — Create repos, push code, open PRs
 
 ## Architecture
 
@@ -141,8 +154,8 @@ Curtis: git init → create repo → commit → push → returns repo URL
 
 - Linux (tested on Arch/omarchy)
 - Node.js 18+
-- An Anthropic API key (for Claude Code)
-- OpenClaw account
+- **Claude Code subscription** (Max or Pro — no separate API key needed)
+- OpenClaw account (free)
 - A messaging channel (Telegram recommended)
 
 ## Documentation
@@ -161,4 +174,4 @@ MIT
 
 **Rami Ghalayini** — [@Chordlini](https://github.com/Chordlini)
 
-Built with [OpenClaw](https://openclaw.com) + [Claude Code](https://claude.ai/claude-code)
+Built with [OpenClaw](https://openclaw.com) + [Claude Code](https://claude.ai/claude-code) — no extra cost, just your existing subscription
