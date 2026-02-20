@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/mascot.jpg" alt="Curtis Bot" width="300">
+</p>
+
 # Curtis Bot
 
 **AI Agent Gateway** — Bridge your phone to Claude Code, Kimi, and other AI coding CLIs through OpenClaw.
