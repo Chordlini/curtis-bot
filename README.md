@@ -152,7 +152,7 @@ Curtis: git init → create repo → commit → push → returns repo URL
 
 ## Requirements
 
-- Linux (tested on Arch/omarchy)
+- **Linux or macOS** (tested on Arch/omarchy and macOS)
 - Node.js 18+
 - **Claude Code subscription** (Max or Pro — no separate API key needed)
 - OpenClaw account (free)
